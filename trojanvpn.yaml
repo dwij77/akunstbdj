@@ -1,0 +1,14 @@
+proxies:
+  - name: trojan_ws
+    server: quiz.int.vidio.com
+    port: 443
+    type: trojan
+    password: 17cd5416-7e7e-4e2a-819b-2191cf266da3
+    skip-cert-verify: true
+    sni: tro-id13.gproxy.pro
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: tro-id13.gproxy.pro
+    udp: true
